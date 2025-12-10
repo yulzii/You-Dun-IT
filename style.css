@@ -1,0 +1,43 @@
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+.sprite {
+  background-image: url("assets/desk-chair-light-bin.png");
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.room {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+}
+
+#desk {
+  position: absolute;
+  top: 500px;
+  left: 40vw;
+  width: 44px;
+  height: 19px;
+  background-position: -18px -18px;
+  transform: scale(10);
+  transform-origin: top left;
+}
+
+#chair {
+  position: absolute;
+  top: 420px;
+  left: calc(40vw + 150px);
+  width: 14px;
+  height: 27px;
+  background-position: -1px -10px;
+  transform: scale(10);
+  transform-origin: top left;
+}
