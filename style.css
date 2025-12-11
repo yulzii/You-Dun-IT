@@ -6,18 +6,40 @@
   display: block;
 }
 
-.sprite {
+.sprite_office {
   background-image: url("assets/desk-chair-light-bin.png");
   background-repeat: no-repeat;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
 
+.sprite_characters {
+  background-image: url("assets/Sanglorians\ trainer\ sprites.png");
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#hacker {
+  padding-bottom: 20px;
+}
+
+#yvonne {
+  position: absolute;
+  top: 400px;
+  left: 60vw;
+  width: 32px;
+  height: 59px;
+  background-position: -202px -68px;
+  transform: scale(8);
+  transform-origin: top left;
+}
+
 #start {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(215, 60, 192, 0.677);
+  background-color: rgb(0, 0, 0);
 }
 #start.screen.active {
   display: flex;
@@ -25,30 +47,44 @@
   justify-content: center;
   align-items: center;
 }
+/* #start > h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 48px;
+} */
 
-#start > p {
+#room.screen.active {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#room > p {
   text-align: center;
   font-size: 36px;
   font-weight: bolder;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  background-color: rgba(255, 255, 255, 0.193);
+  color: white;
+  border-radius: 8px;
+  width: 30vw;
 }
 #startButton {
   padding: 12px 40px;
   font-size: 36px;
-  background-color: rgb(164, 13, 109);
+  background-color: #6048c8;
   color: #fff;
   border-radius: 8px;
-  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 5px 4px 20px 1px #6048c8;
   transition: 0.2s all;
 }
 
 /* Adding transformation when the button is active */
 #startButton:hover {
   transform: scale(0.98);
-  background-color: rgb(197, 19, 132);
+  background-color: #231564;
   /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 5px 4px 16px 10px #6048c8;
   /* Lowering the shadow */
 }
 
