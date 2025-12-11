@@ -5,3 +5,4 @@
 3. Art by kickstand284, CC0, https://opengameart.org/content/papernote-game-icon-32x32
 4. Art by Sevarihk, CC-BY 4.0, https://opengameart.org/content/pixel-art-documents
 5. Art by Sanglorian, CC-BY-SA 3.0, https://opengameart.org/content/charactertrainer-sprites-64px
+6. Art by PongMan, CC0, https://opengameart.org/content/flat-folder-icon
