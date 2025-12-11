@@ -22,6 +22,7 @@
 
 #hacker {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #yvonne {
@@ -47,11 +48,6 @@
   justify-content: center;
   align-items: center;
 }
-/* #start > h1 {
-  color: white;
-  font-family: monospace;
-  font-size: 48px;
-} */
 
 #room.screen.active {
   display: flex;
