@@ -7,3 +7,4 @@
 5. Art by Sanglorian, CC-BY-SA 3.0, https://opengameart.org/content/charactertrainer-sprites-64px
 6. SVG by soco-st, CC, https://www.svgrepo.com/svg/493162/hacker
 7. Art by PongMan, CC0, https://opengameart.org/content/flat-folder-icon
+8. Title font by GGBot Net, CC0v1.0 Universal, https://www.fontspace.com/raster-forge-font-f135159

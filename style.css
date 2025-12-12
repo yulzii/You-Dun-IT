@@ -20,10 +20,10 @@
   image-rendering: crisp-edges;
 }
 
-#hacker {
+/* #hacker {
   padding-bottom: 20px;
   padding-top: 20px;
-}
+} */
 
 #yvonne {
   position: absolute;
@@ -34,6 +34,7 @@
   background-position: -202px -68px;
   transform: scale(8);
   transform-origin: top left;
+  z-index: 1;
 }
 
 #start {
@@ -58,15 +59,17 @@
 
 #room > p {
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bolder;
-  background-color: rgba(255, 255, 255, 0.193);
+  background-color: rgba(0, 0, 0, 0.193);
   color: white;
   border-radius: 8px;
-  width: 30vw;
+  padding: 20px 30px;
+  /* width: 30vw; */
 }
 #startButton {
-  padding: 12px 40px;
+  margin-top: 50px;
+  padding: 12px 60px;
   font-size: 36px;
   background-color: #6048c8;
   color: #fff;
@@ -111,6 +114,35 @@
   background-position: -1px -10px;
   transform: scale(9.5);
   transform-origin: top left;
+}
+
+#trashcan {
+  position: absolute;
+  top: 550px;
+  left: calc(40vw + 450px);
+  width: 12px;
+  height: 15px;
+  background-position: -82px -22px;
+  transform: scale(9.5);
+  transform-origin: top left;
+}
+
+.note {
+  display: none;
+}
+
+.note.active {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: scale(2);
+  z-index: 1;
+}
+
+#note_text {
+  margin-top: -290px;
+  padding-left: 30px;
+  transform: rotate(-4deg);
 }
 
 #computer {
