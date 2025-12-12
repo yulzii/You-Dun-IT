@@ -25,6 +25,8 @@ const asanaIcon = document.getElementById("asana_icon");
 const asanaUnlocked = document.getElementById("asana_unlocked");
 const asanaLogin = document.getElementById("login_asana");
 const successfulLogin = document.getElementById("success");
+const rdLoginScreen = document.getElementById("rd_login_screen");
+const rdMainWindow = document.getElementById("rd_main_window");
 
 function showScreen(screen) {
   document
@@ -43,7 +45,7 @@ function showNote() {
 }
 
 function checkPassword(computerLoginScreen) {
-  if (computerLoginScreen) {
+  if (computerLoginScreen == 0) {
     const input = document.getElementById("password_input").value;
     const message = document.getElementById("password_message");
     if (input == "0304") {
@@ -51,7 +53,7 @@ function checkPassword(computerLoginScreen) {
     } else {
       message.textContent = "Incorrect Password";
     }
-  } else {
+  } else if (computerLoginScreen == 1) {
     const input = document.getElementById("password_input_asana").value;
     const message = document.getElementById("password_message_asana");
     if (input == "CodeJammers2025") {
@@ -59,6 +61,16 @@ function checkPassword(computerLoginScreen) {
       asanaUnlocked.classList.remove("hidden");
       asanaLogin.classList.add("hidden");
       success.classList.add("active");
+    } else {
+      message.textContent = "Incorrect Password";
+    }
+  } else {
+    const input = document.getElementById("password_input_rd").value;
+    const message = document.getElementById("password_message_rd");
+    if (input == "Tad Dun IT!") {
+      message.textContent = "Log In Successful!";
+      rdLoginScreen.style.display = "none";
+      rdMainWindow.classList.remove("hidden");
     } else {
       message.textContent = "Incorrect Password";
     }
@@ -99,7 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   remoteDesktopIcon.addEventListener("click", () => {
-    remoteDesktopPopUp.style.display = "block";
+    if (remoteDesktopPopUp.style.display == "block") {
+      remoteDesktopPopUp.style.display = "none";
+    } else {
+      remoteDesktopPopUp.style.display = "block";
+    }
   });
 
   closeRemoteDesktopButton.addEventListener("click", () => {
@@ -120,6 +136,10 @@ document.addEventListener("DOMContentLoaded", () => {
     asanaPopUp.style.display = "none";
   });
   asanaIcon.addEventListener("click", () => {
-    asanaPopUp.style.display = "block";
+    if (asanaPopUp.style.display == "block") {
+      asanaPopUp.style.display = "none";
+    } else {
+      asanaPopUp.style.display = "block";
+    }
   });
 });

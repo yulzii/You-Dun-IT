@@ -69,7 +69,7 @@
             placeholder="Enter password"
             autofocus
           />
-          <button id="password_button" onclick="checkPassword(true)">Log in</button>
+          <button id="password_button" onclick="checkPassword(0)">Log in</button>
         </div>
         <p id="password_message"></p>
       </div>
@@ -92,7 +92,7 @@
             <p style="margin:0; font-weight:bold;">DeletedFiles. Recover?</p>
             <p><u>DMHSSites.png</u></p>
             <p><u>CW_Large_Horiz.jpeg</u></p>
-            <p><u>IT_dud_anT.pdf</u></p>
+            <p><u>IT_Dud!_anT.pdf</u></p>
             <p><u>Shrimp_Cookie.png</u></p>
             </div>
           </div>
@@ -126,21 +126,44 @@
       <div id="window">
         <img id="window_popup" src="assets/website-window-rd.png"/>
         <img id="close_remote_desktop" src="assets/circle-x-svgrepo-com.png"/>
-        <p>Users:</p>
-        <div id="users">
-          <p class = "user">Emmy</p>
-          <p class = "user">Yesui</p>
-          <p class = "user">Brianna</p>
-          <p class = "user" id="tad">Tad</p>
-          <p class = "user">Luke</p>
-          <p class = "user">Patrick</p>
-        </div>
-        <div class= "sprite_computer_screen" id="users_window"></div>
+        <div class="hidden" id="rd_main_window">
+          <p>Users:</p>
+          <div id="users">
+            <p class = "user">Emmy</p>
+            <p class = "user">Yesui</p>
+            <p class = "user">Brianna</p>
+            <p class = "user" id="tad">Tad</p>
+            <p class = "user">Luke</p>
+            <p class = "user">Patrick</p>
+            <p class = "user">Scot</p>
+            <p class = "user">Don</p>          
+            <p class = "user">Dmitri</p>
 
+          </div>
+          <div class= "sprite_computer_screen" id="users_window"></div>
+        </div>
         <div class="hidden" id="rd_clue">
           <img src="assets/parchment-gold.png"/>
           <p>CodeJammers2025</p>
         </div>
+        <div id="rd_login_screen">
+          <div id="login_rd">
+            <p>Enter Tad's password to proceed:</p>
+            <div id="login_box_rd">
+              <div id="input_box_rd">
+                <input
+                  type="password"
+                  id="password_input_rd"
+                  placeholder="Enter password"
+                  autofocus
+                />
+                <button id="rd_password_button" onclick="checkPassword(2)">Log in</button>
+              </div>
+              <p id="password_message_rd"></p>
+            </div>
+          </div>
+        </div>
+
       </div>
     <!--------REMOTE DESKTOP WINDOW END---------->
 
@@ -165,7 +188,7 @@
               placeholder="Enter password"
               autofocus
             />
-            <button id="asana_password_button" onclick="checkPassword(false)">Log in</button>
+            <button id="asana_password_button" onclick="checkPassword(1)">Log in</button>
           </div>
           <p id="password_message_asana"></p>
         </div>
