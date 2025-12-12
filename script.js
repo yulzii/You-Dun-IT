@@ -56,7 +56,8 @@ function flipFrame(id) {
 document.addEventListener("DOMContentLoaded", () => {
   flippedFrame.style.display = "none";
   userWindow.style.display = "none";
-  // rdClue.style.display = "none";
+  remoteDesktopPopUp.style.display = "none";
+
   startButton.addEventListener("click", () => {
     showScreen(roomScreen);
   });
