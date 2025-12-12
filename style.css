@@ -94,6 +94,23 @@
   background-color: rgb(186, 186, 89);
 }
 
+#yvonne_framed {
+  position: absolute;
+  width: 50px;
+
+  top: 360px;
+  left: 42vw;
+}
+
+/* 
+#emmy_framed {
+  position: absolute;
+  width: 50px;
+
+  top: 360px;
+  left: 40vw;
+} */
+
 #desk {
   position: absolute;
   top: 500px;
@@ -145,22 +162,17 @@
   transform: rotate(-4deg);
 }
 
-.note2 {
-  display: none;
-}
-
-.note.active2 {
+#sticky_note {
   display: block;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  transform: scale(2);
+  transform: scale(0.5);
   z-index: 1;
 }
 
-#note_text2 {
+#sticky_note_text {
   margin-top: -290px;
   padding-left: 30px;
-  transform: rotate(-4deg);
 }
 
 #computer {
@@ -169,33 +181,50 @@
   left: calc(40vw + 100px);
 }
 
-#login_screen {
+#login_screen.active {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(173, 44, 175);
+  background-color: rgb(193, 85, 226);
+}
+
+#login_screen > a {
+  padding-bottom: 40px;
 }
 
 #login_box {
-  width: 300px;
-  padding: 20px;
-  background: #1e1e1e;
+  padding: 50px;
+  background-color: #ab4be7;
   color: white;
   font-family: monospace;
   border-radius: 8px;
 }
-
-input {
-  width: 100%;
+#input_box {
+  display: flex;
+  flex-direction: row;
+}
+#password_input {
+  width: 70%;
   padding: 10px;
+  font-size: x-large;
+  border-radius: 10px;
 }
 
 #password_button {
-  width: 100%;
+  width: 30%;
   padding: 10px;
+  border-radius: 10px;
 }
 
-#computer_screen {
+#password_message {
+  font-size: large;
+}
+
+#computer_screen.active {
   width: 100vw;
   height: 100vh;
   background-color: rgba(39, 114, 206, 0.677);

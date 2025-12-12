@@ -10,3 +10,4 @@
 8. Title font by GGBot Net, CC0v1.0 Universal, https://www.fontspace.com/raster-forge-font-f135159
 9. Art by Santoniche, CC-BY 4.0, https://opengameart.org/content/dustbin
 10. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/44079/recycle-bin
+11. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/274608/artistic-frame
