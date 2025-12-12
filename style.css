@@ -163,11 +163,7 @@
 }
 
 #sticky_note {
-  display: block;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  transform: scale(0.5);
-  z-index: 1;
+  display: flex;
 }
 
 #sticky_note_text {
