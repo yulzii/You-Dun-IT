@@ -16,3 +16,4 @@
 14. SVG by Noah Jacobus, PD/CC0, https://www.svgrepo.com/svg/535294/circle-x
 15. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/73673/asana
 16. SVG by Moriarty77, PD/CC0, https://www.svgrepo.com/svg/494486/website-program
+17. Image by Roddy117, https://www.reddit.com/r/MakeMeSuffer/comments/ksvdkm/shrimp_cookie/?rdt=35256
