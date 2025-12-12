@@ -14,3 +14,4 @@
 12. SVG by puppylinux, PD/CC0, https://www.svgrepo.com/svg/366419/remote-desktop
 13. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/131944/website-window
 14. SVG by Noah Jacobus, PD/CC0, https://www.svgrepo.com/svg/535294/circle-x
+15. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/73673/asana
