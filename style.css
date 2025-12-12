@@ -145,6 +145,24 @@
   transform: rotate(-4deg);
 }
 
+.note2 {
+  display: none;
+}
+
+.note.active2 {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: scale(2);
+  z-index: 1;
+}
+
+#note_text2 {
+  margin-top: -290px;
+  padding-left: 30px;
+  transform: rotate(-4deg);
+}
+
 #computer {
   position: absolute;
   top: 300px;
