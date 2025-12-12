@@ -59,10 +59,19 @@
     <!--------COMPUTER---------->
     <div class="screen" id="computer_screen">
       <!-- <div class="desktop"> -->
-        <div class="icon">
-          <img src="assets/recycle-bin-svgrepo-com.png" alt="grey bin with recycle sign">
-          <p>Recycle Bin</p>
-        </div>
+        <div class="icon folder">
+          <input type="checkbox" id="recycle-popup" hidden>
+          <label for="recycle-popup" style="cursor:pointer;">
+            <img src="assets/recycle-bin-svgrepo-com.png" alt="grey bin with recycle sign" style="width:50px;">
+            <p>Recycle Bin</p>
+          </label>
+
+          <div class="popup">
+            <p style="margin:0; font-weight:bold;">DeletedFile</p>
+            <p>Anagrammmmmm</p>
+            </div>
+          </div>
+
         <div class="icon">
           <img src="assets/folder-icon.png" alt="yellow folder icon">
           <p>Downloads</p>

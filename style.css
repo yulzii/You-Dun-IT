@@ -242,3 +242,25 @@
   user-select: none;
   cursor: pointer;
 }
+
+.folder {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.folder .popup {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 220px;
+  background: white;
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.folder input:checked + label + .popup {
+  display: block;
+}
