@@ -102,6 +102,23 @@
   left: 42vw;
 }
 
+#empty_frame {
+  position: absolute;
+  width: 50px;
+
+  top: 360px;
+  left: 42vw;
+}
+
+#flipped_frame > p {
+  position: absolute;
+  width: 50px;
+
+  top: 355px;
+  left: 42.2vw;
+  transform: rotate(-45deg);
+}
+
 /* 
 #emmy_framed {
   position: absolute;
@@ -157,9 +174,10 @@
 }
 
 #note_text {
-  margin-top: -290px;
-  padding-left: 30px;
-  transform: rotate(-4deg);
+  margin-top: -260px;
+  padding-left: 60px;
+  transform: rotate(-4.3deg);
+  /* font-family: cursive; */
 }
 
 #sticky_note {

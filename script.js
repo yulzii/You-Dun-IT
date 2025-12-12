@@ -7,6 +7,8 @@ const computerScreen = document.getElementById("computer_screen");
 const computer = document.getElementById("computer");
 const trashcan = document.getElementById("trashcan");
 const note = document.getElementById("note");
+const profilePic = document.getElementById("yvonne_framed");
+const flippedFrame = document.getElementById("flipped_frame");
 
 function showScreen(screen) {
   document
@@ -34,7 +36,16 @@ function checkPassword() {
   }
 }
 
+function flipFrame(id) {
+  if (id === 0) {
+    flippedFrame.style.display = "block";
+  } else {
+    flippedFrame.style.display = "none";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  flippedFrame.style.display = "none";
   startButton.addEventListener("click", () => {
     showScreen(roomScreen);
   });
@@ -44,5 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   trashcan.addEventListener("click", () => {
     showNote();
+  });
+
+  profilePic.addEventListener("click", () => {
+    flipFrame(0);
+  });
+
+  flippedFrame.addEventListener("click", () => {
+    flipFrame(1);
   });
 });
