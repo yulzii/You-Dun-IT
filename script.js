@@ -54,7 +54,7 @@ function checkPassword(computerLoginScreen) {
   } else {
     const input = document.getElementById("password_input_asana").value;
     const message = document.getElementById("password_message_asana");
-    if (input == "CodeJam2025") {
+    if (input == "CodeJammers2025") {
       message.textContent = "Log In Successful!";
       asanaUnlocked.classList.remove("hidden");
       asanaLogin.classList.add("hidden");
