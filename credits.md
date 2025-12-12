@@ -8,3 +8,4 @@
 6. SVG by soco-st, CC, https://www.svgrepo.com/svg/493162/hacker
 7. Art by PongMan, CC0, https://opengameart.org/content/flat-folder-icon
 8. Title font by GGBot Net, CC0v1.0 Universal, https://www.fontspace.com/raster-forge-font-f135159
+9. Art by Santoniche, CC-BY 4.0, https://opengameart.org/content/dustbin
