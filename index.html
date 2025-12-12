@@ -30,7 +30,7 @@
       <img id="yvonne_framed" src="assets/yvonne_framed.png" />
       <div id="flipped_frame">
         <img id="empty_frame" src="assets/empty_frame.png" />
-        <p>03/15</p>
+        <p>03/04</p>
       </div>
 
       <div class="sprite_office" id="desk"></div>
@@ -69,7 +69,7 @@
             placeholder="Enter password"
             autofocus
           />
-          <button id="password_button" onclick="checkPassword()">Log in</button>
+          <button id="password_button" onclick="checkPassword(true)">Log in</button>
         </div>
         <p id="password_message"></p>
       </div>
@@ -116,7 +116,7 @@
       
     <!--------REMOTE DESKTOP WINDOW---------->
       <div id="window">
-        <img id="window_popup" src="assets/website-window-svgrepo-com (1).png"/>
+        <img id="window_popup" src="assets/website-window-rd.png"/>
         <img id="close_remote_desktop" src="assets/circle-x-svgrepo-com.png"/>
         <p>Users:</p>
         <div id="users">
@@ -143,14 +143,49 @@
       />
       <p>Asana</p>
     </div>
+    <!--------ASANA WINDOW---------->
+    <div id="window_asana">
+      <img id="window_popup" src="assets/website-window-asana.png"/>
+      <img id="close_asana" src="assets/circle-x-svgrepo-com.png"/>
+      <div id="login_asana">
+        <p>Please login to proceed:</p>
+        <div id="login_box_asana">
+          <div id="input_box_asana">
+            <input
+              type="password"
+              id="password_input_asana"
+              placeholder="Enter password"
+              autofocus
+            />
+            <button id="asana_password_button" onclick="checkPassword(false)">Log in</button>
+          </div>
+          <p id="password_message_asana"></p>
+        </div>
+      </div>
+      <div class="hidden" id="asana_unlocked">
+        <img src="assets/website-program-svgrepo-com.png"/>
+        <!-- <p>logged in!</p> -->
+      </div>
+    </div>
+  <!--------ASANA WINDOW END---------->
+
     
       <div id="sticky_note">
         <img src="assets/parchment-gold.png" />
         <p id="sticky_note_text">Reduce, Reuse</p>
         
       </div>
+
     </div>
     
+    <div id="success">
+      <a href="https://www.fontspace.com/category/pixel"
+      ><img
+        src="https://see.fontimg.com/api/rf5/JpBgm/MDIxNjc2MDU1NTllNDQzYzhhNDU0ZWIyYWQxMGZmYWYudHRm/WW91IER1biBJVCE/raster-forge-regular.png?r=fs&h=65&w=1000&fg=FFFFFF&bg=FFFFFF&tb=1&s=15"
+        alt="Pixel fonts"
+    /></a> 
+      <p>You traced the hacker's tracks and found your asana password on their desktop!</p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

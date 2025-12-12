@@ -19,6 +19,13 @@ const users = document.getElementById("users");
 const tad = document.getElementById("tad");
 const rdClue = document.getElementById("rd_clue");
 
+const closeAsanaButton = document.getElementById("close_asana");
+const asanaPopUp = document.getElementById("window_asana");
+const asanaIcon = document.getElementById("asana_icon");
+const asanaUnlocked = document.getElementById("asana_unlocked");
+const asanaLogin = document.getElementById("login_asana");
+const successfulLogin = document.getElementById("success");
+
 function showScreen(screen) {
   document
     .querySelectorAll(".screen")
@@ -35,13 +42,26 @@ function showNote() {
   }
 }
 
-function checkPassword() {
-  const input = document.getElementById("password_input").value;
-  const message = document.getElementById("password_message");
-  if (input == "0315") {
-    showScreen(computerScreen);
+function checkPassword(computerLoginScreen) {
+  if (computerLoginScreen) {
+    const input = document.getElementById("password_input").value;
+    const message = document.getElementById("password_message");
+    if (input == "0304") {
+      showScreen(computerScreen);
+    } else {
+      message.textContent = "Incorrect Password";
+    }
   } else {
-    message.textContent = "Incorrect Password";
+    const input = document.getElementById("password_input_asana").value;
+    const message = document.getElementById("password_message_asana");
+    if (input == "CodeJam2025") {
+      message.textContent = "Log In Successful!";
+      asanaUnlocked.classList.remove("hidden");
+      asanaLogin.classList.add("hidden");
+      success.classList.add("active");
+    } else {
+      message.textContent = "Incorrect Password";
+    }
   }
 }
 
@@ -57,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   flippedFrame.style.display = "none";
   userWindow.style.display = "none";
   remoteDesktopPopUp.style.display = "none";
+  asanaPopUp.style.display = "none";
 
   startButton.addEventListener("click", () => {
     showScreen(roomScreen);
@@ -93,5 +114,12 @@ document.addEventListener("DOMContentLoaded", () => {
     userWindow.style.display = "block";
     e.stopPropagation();
     rdClue.classList.remove("hidden");
+  });
+
+  closeAsanaButton.addEventListener("click", () => {
+    asanaPopUp.style.display = "none";
+  });
+  asanaIcon.addEventListener("click", () => {
+    asanaPopUp.style.display = "block";
   });
 });
