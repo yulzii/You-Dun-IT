@@ -151,6 +151,32 @@
   left: calc(40vw + 100px);
 }
 
+#login_screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(173, 44, 175);
+}
+
+#login_box {
+  width: 300px;
+  padding: 20px;
+  background: #1e1e1e;
+  color: white;
+  font-family: monospace;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+#password_button {
+  width: 100%;
+  padding: 10px;
+}
+
 #computer_screen {
   width: 100vw;
   height: 100vh;

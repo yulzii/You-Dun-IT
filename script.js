@@ -1,6 +1,8 @@
 const startScreen = document.getElementById("start");
 const roomScreen = document.getElementById("room");
 const startButton = document.getElementById("startButton");
+const loginScreen = document.getElementById("login_screen");
+
 const computerScreen = document.getElementById("computer_screen");
 const computer = document.getElementById("computer");
 const trashcan = document.getElementById("trashcan");
@@ -22,12 +24,22 @@ function showNote() {
   }
 }
 
+function checkPassword() {
+  const input = document.getElementById("password_input").value;
+  const message = document.getElementById("password_message");
+  if (input == "0315") {
+    showScreen(computerScreen);
+  } else {
+    message.textContent = "Incorrect Password";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   startButton.addEventListener("click", () => {
     showScreen(roomScreen);
   });
   computer.addEventListener("click", () => {
-    showScreen(computerScreen);
+    showScreen(loginScreen);
   });
 
   trashcan.addEventListener("click", () => {
