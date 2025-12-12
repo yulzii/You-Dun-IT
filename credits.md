@@ -11,3 +11,6 @@
 9. Art by Santoniche, CC-BY 4.0, https://opengameart.org/content/dustbin
 10. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/44079/recycle-bin
 11. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/274608/artistic-frame
+12. SVG by puppylinux, PD/CC0, https://www.svgrepo.com/svg/366419/remote-desktop
+13. SVG by SVG Repo, CC0, https://www.svgrepo.com/svg/131944/website-window
+14. SVG by Noah Jacobus, PD/CC0, https://www.svgrepo.com/svg/535294/circle-x

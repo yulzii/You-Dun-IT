@@ -77,32 +77,64 @@
 
     <!--------COMPUTER---------->
     <div class="screen" id="computer_screen">
-      <!-- <div class="desktop"> -->
-        <div class="icon folder">
-          <input type="checkbox" id="recycle-popup" hidden>
-          <label for="recycle-popup" style="cursor:pointer;">
-            <img src="assets/recycle-bin-svgrepo-com.png" alt="grey bin with recycle sign" style="width:50px;">
-            <p>Recycle Bin</p>
-          </label>
+      <div class="icon folder">
+        <input type="checkbox" id="recycle-popup" hidden />
+        <label for="recycle-popup" style="cursor: pointer">
+          <img
+            src="assets/recycle-bin-svgrepo-com.png"
+            alt="grey bin with recycle sign"
+            style="width: 50px"
+          />
+          <p>Recycle Bin</p>
+        </label>
 
-          <div class="popup">
-            <p style="margin:0; font-weight:bold;">DeletedFile</p>
-            <p>Anagrammmmmm</p>
-            </div>
-          </div>
-
-        <div class="icon">
-          <img src="assets/folder-icon.png" alt="yellow folder icon">
-          <p>Downloads</p>
-        </div>
-        <div id="sticky_note" style="right: 10px;">
-          <img src="assets/parchment-gold.png"/>
-          <div id="sticky_note_text">
-            <p>Reduce, reuse</p>
-          </div>
+        <div class="popup">
+          <p style="margin: 0; font-weight: bold">DeletedFile</p>
+          <p>Anagrammmmmm</p>
         </div>
       </div>
+
+      <div class="icon">
+        <img src="assets/folder-icon.png" alt="yellow folder icon" />
+        <p>Downloads</p>
+      </div>
+      <div class="icon" id="remote_desktop_icon">
+        <img
+          src="assets/remote-desktop-svgrepo-com.png"
+          alt="remote desktop icon featuring 2 computers postioned at an offset"
+        />
+        <p>Remote</br>Desktop</p>
+      </div>
+      
+    <!--------REMOTE DESKTOP WINDOW---------->
+      <div id="window">
+        <img id="window_popup" src="assets/website-window-svgrepo-com (1).png"/>
+        <img id="close_remote_desktop" src="assets/circle-x-svgrepo-com.png"/>
+        <p>Users:</p>
+        <div id="users">
+          <p class = "user">Emmy</p>
+          <p class = "user">Yesui</p>
+          <p class = "user">Brianna</p>
+          <p class = "user" id="tad">Tad</p>
+          <p class = "user">Luke</p>
+          <p class = "user">Patrick</p>
+        </div>
+        <div class= "sprite_computer_screen" id="users_window"></div>
+
+        <div class="hidden" id="rd_clue">
+          <img src="assets/parchment-gold.png"/>
+          <p>codeJammer2026</p>
+        </div>
+      </div>
+    <!--------REMOTE DESKTOP WINDOW END---------->
+
+      <div id="sticky_note">
+        <img src="assets/parchment-gold.png" />
+        <p id="sticky_note_text">Reduce, Reuse</p>
+        
+      </div>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>

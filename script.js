@@ -9,6 +9,15 @@ const trashcan = document.getElementById("trashcan");
 const note = document.getElementById("note");
 const profilePic = document.getElementById("yvonne_framed");
 const flippedFrame = document.getElementById("flipped_frame");
+const remoteDesktopPopUp = document.getElementById("window");
+const remoteDesktopIcon = document.getElementById("remote_desktop_icon");
+const closeRemoteDesktopButton = document.getElementById(
+  "close_remote_desktop"
+);
+const userWindow = document.getElementById("users_window");
+const users = document.getElementById("users");
+const tad = document.getElementById("tad");
+const rdClue = document.getElementById("rd_clue");
 
 function showScreen(screen) {
   document
@@ -46,6 +55,8 @@ function flipFrame(id) {
 
 document.addEventListener("DOMContentLoaded", () => {
   flippedFrame.style.display = "none";
+  userWindow.style.display = "none";
+  // rdClue.style.display = "none";
   startButton.addEventListener("click", () => {
     showScreen(roomScreen);
   });
@@ -63,5 +74,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   flippedFrame.addEventListener("click", () => {
     flipFrame(1);
+  });
+
+  remoteDesktopIcon.addEventListener("click", () => {
+    remoteDesktopPopUp.style.display = "block";
+  });
+
+  closeRemoteDesktopButton.addEventListener("click", () => {
+    remoteDesktopPopUp.style.display = "none";
+  });
+  users.addEventListener("click", () => {
+    userWindow.style.display = "block";
+
+    rdClue.classList.add("hidden");
+  });
+  tad.addEventListener("click", (e) => {
+    userWindow.style.display = "block";
+    e.stopPropagation();
+    rdClue.classList.remove("hidden");
   });
 });
