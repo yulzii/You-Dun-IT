@@ -163,7 +163,9 @@
 }
 
 #sticky_note {
-  display: flex;
+  /* display: flex; */
+  transform: scale(0.5);
+  position: absolute;
 }
 
 #sticky_note_text {
